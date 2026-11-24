@@ -1,0 +1,41 @@
+
+# ============================================================
+# 40 AKB AI - GOOGLE CLOUD RUN REQUIREMENTS
+# ============================================================
+
+# FastAPI Core Runtime
+fastapi>=0.115.0
+uvicorn[standard]>=0.34.0
+pydantic>=2.10.0
+python-multipart>=0.0.18
+
+# Distributed Caching and API Key Management
+redis>=5.0.0
+supabase>=2.10.0
+
+# Vector Database
+chromadb>=0.6.3
+
+# Remote Hugging Face Embeddings
+huggingface_hub>=0.30.0
+
+# Language Detection and Environment
+langdetect>=1.0.9
+python-dotenv>=1.0.1
+
+# PDF Processing and HTTP
+pypdf>=5.0.0
+requests>=2.32.0
+typing-extensions>=4.12.0
+
+# AI Inference APIs
+groq>=1.5.0
+tavily-python>=0.5.0
+
+# ============================================================
+# DEPENDENCY OPTIMIZATION
+# ============================================================
+# torch, transformers and sentence-transformers are excluded.
+# Embeddings are generated remotely through Hugging Face.
+# No local embedding model is intentionally loaded.
+# ============================================================
